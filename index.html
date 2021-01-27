@@ -37,7 +37,7 @@
 		GitHubCalendar(".calendar", "xli2522", { responsive: true });
 
 		// Use a proxy
-		GitHubCalendar(".calendar", "xli2522", {
+		GitHubCalendar(".calendar", "xli2522", {tooltips: true}, {
 			proxy (username) {
 			return fetch(`https://your-proxy.com/github?user=${xli2522}`)
 			}
