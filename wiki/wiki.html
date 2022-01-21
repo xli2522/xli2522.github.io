@@ -1,0 +1,436 @@
+<!doctype html>
+<html class="no-js" lang="en">
+		<body>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Xiyuan's Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href="http://html5-templates.com/" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="style.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+							
+
+		<!-- Include the library. -->
+		<script
+		src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+		</script>
+
+		<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+		<link
+		rel="stylesheet"
+		href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+		/>
+
+		<!-- Prepare a container for your calendar. -->
+		<div class="calendar">
+		<!-- Loading stuff -->
+		Retrieving data from GitHub...
+		</div>
+
+		<script>
+		GitHubCalendar(".calendar", "xli2522");
+
+		// or enable responsive functionality:
+		GitHubCalendar(".calendar", "xli2522", { responsive: true });
+
+		// Use a proxy
+		GitHubCalendar(".calendar", "xli2522", {tooltips: true}, {
+			proxy (username) {
+			return fetch(`https://your-proxy.com/github?user=${xli2522}`)
+			}
+		}).then(r => r.text())
+		</script>
+
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div class="wrapAll clearfix">
+			<div class="sidebar">
+				<div class="logo">
+					<a href="/"><img src='https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/logo.png?raw=true' alt="logo"></a>
+				</div>
+				<div class="navigation">
+					<ul>
+						<li><a href="#">Main page</a></li>
+						<li><a href="#">Contents</a></li>
+						<li><a href="#">Featured content</a></li>
+					</ul>
+					<h3>Interaction</h3>
+					<ul>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portal</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="mainsection">
+				<div class="headerLinks">
+					<span class="user">Not logged in</span> <a href="#">Talk</a> <a href="#">Contributions</a> <a href="#">Create account</a> <a href="#">Log in</a>
+				</div>
+				<div class="tabs clearfix">
+					<div class="tabsLeft">
+						<ul>
+							<li><a href="#" class="active">Article</a></li>
+							<li><a href="#">Talk</a></li>						
+						</ul>
+					</div>
+					<div id="simpleSearch">
+						<input type="text" name="searchInput" id="searchInput" placeholder="Search Wikipedia" size="12" />
+						<div id="submitSearch"></div>
+					</div>
+					<div class="tabsRight">
+						<ul>
+							<li><a href="#" class="active">Read</a></li>
+							<li><a href="#">View source</a></li>						
+							<li><a href="#">View history</a></li>						
+						</ul>
+					</div>
+				
+				</div>
+				<div class="article">
+					<h1>Xiyuan's Research Library</h1>
+					<p class="siteSub">From Wikipedia, the free encyclopedia</p>
+					<p class="roleNote">This is a media gallery for my research projects, not a real Wikipedia page.</p>
+
+					<div class="articleRight">
+						<div class="articleRightInner">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/astro2801p2.png?raw=true" alt="astro2801p2" height=auto width="480"> >
+							<p>IC4756 Photographed @ Mayhill, New Mexico, USA</p>
+							<p>Oct 23rd 2019 </p>
+						</div>
+					</div>
+		
+					<div class="contentsPanel">
+						<div class="contentsHeader">Contents</div>
+						<ul>
+							<li><span>1</span><a href="#">2021</a>
+								<ul>
+									<li><span>1.1</span><a href="#Kawahara">Numerical Solver and Stability Analysis of KdV and Kawahara Equations</a></li>
+									<li><span>1.2</span><a href="#SpatialCompartmental">Dynamic Spatial Compartmental Models in Epidemiology <small><mark> #Active</mark></small></a></li>
+									<li><span>1.3</span><a href="#GWML">Gravitational Wave - ML <small><mark> #Active</mark></small></a></li>
+									<li><span>1.4</span><a href="#GWTransform">Gravitational Wave - Signal Processing, Denoising, and Analysis <small><mark> #Active</mark></small></a></li>
+									<li><span>1.5</span><a href="#imvideo">Image to Video Made Easy - Imvideo Python Library<small><mark> #Updating</mark></small></a></li>
+								</ul>
+							</li>
+							<li><span>2</span><a href="#">2020</a>
+								<ul>
+									<li><span>2.1</span><a href="#CubeSat">Canadian CubeSat Project </a></li>	
+									<li><span>2.2</span><a href="#CovNET">CovNET Project </a></li>
+									<li><span>2.3</span><a href="#SVEIIRS">Spatial SVEIIRS Model in Epidemiology</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>3</span><a href="#">2019</a>
+								<ul>
+									<li><span>3.1</span><a href="#OpenCV">OpenCV Case Study and Demo</a> </li>
+									<li><span>3.2</span><a href="#WaveTank">Wave Tank Probe System</a></li>
+								</ul>
+							</li>
+							<li><span>4</span><a href="#Others">Other Projects</a></li>
+							<li><span>5</span><a href="#Certif">Certifications</a></li>
+						</ul>
+					</div>
+					
+					<!-- 2021 -->
+					<h2>2021</h2>
+					<a id="Kawahara"></a>
+					<h3>Numerical Solver and Stability Analysis of Korteweg-de Vries and Kawahara Equations </h3> 
+					<h4>May - August 2021 Department of Physics and Astronomy, Western University</h4>
+					<a href="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/doc/Kawahara_solver_2021.pdf"> PDF Report </a>| Keywords: <b>KdV, Kawahara, Wave Equation, Numerical Computing, Perturbation, Stability </b></p>
+					
+					<div class="row">
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/Kawahara/central_amp.PNG?raw=true" class="centerImage"  alt="central_amp" height=auto width=auto onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/Kawahara/spectrogram.png?raw=true" class="centerImage"  alt="Spectrogram" height=auto width=auto onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/Kawahara/damping.PNG?raw=true" class="centerImage"  alt="damping" height=auto width=auto onclick="myFunction(this);">
+						</div>
+					</div>
+					<!-- <center><iframe width="560" height="315" src="https://www.youtube.com/embed/x-p6Cd_XT1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>-->
+					<center><a href="https://youtu.be/x-p6Cd_XT1Q">Video: Small Amplitude Wave Instability Demonstrated by Numerical Kawahara Solver</a></center>
+					
+					<a id="SpatialCompartmental"></a>
+					<h3>Dynamic Spatial Compartmental Models in Epidemiology</h3> 
+					<h4>May 2021, Department of Physics and Astronomy, Western University  <b> - (2021 Western University Undergraduate Summer Research Internship Award)</b></h4>
+					<p>Project ongoing.</p>
+					
+					<a id="GWML"></a>
+					<h3>Gravitational Wave - ML</h3> 
+					<h4>April 2021, Department of Applied Mathematics, Western University</h4>
+					<p>Project ongoing. | Keywords: <b>Gravitational Wave, LIGO, Binary Black Hole, Merger, CNN, Machine Learning, Parameter Estimation, Signal Denoising</b></p>
+					<a href="https://badge.fury.io/py/constantQ"><img src="https://badge.fury.io/py/constantQ.svg" alt="PyPI version" height="auto"><a href="https://badge.fury.io/gh/xli2522%2FConstant-Q">&nbsp; <img src="https://badge.fury.io/gh/xli2522%2FConstant-Q.svg" alt="GitHub version" height="auto"></a></a>
+					<center><p> -- <b>Phase 1 Progress August. 2021</b> | A Constant Q Transform Python Package with Minimal Dependency for Supercomputer Clusters based on <b>GWpy qtransform</b>. </p></center>
+					<center><p> for SHARCNET Supercomputer Clusters</p></center>
+					<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/GWsignal/1187008852_CQT.png?raw=true" class="centerImage"  alt="CQTspectrogram" height=auto width=auto></center>
+					<center><p><b>** All credits for the original Q transform algorithm go to the authors of GWpy and Omega pipeline.</b></p></center>
+
+					<a id="GWTransform"></a>
+					<h3>Gravitational Wave - Signal Processing, Denoising, and Analysis </h3> 
+					<h4>April 2021, Department of Applied Mathematics, Western University</h4>
+					<p>Project ongoing. | Keywords: <b>Gravitational Wave, LIGO, Pulsar, Continuous Signal, Fourier Transform, Q Transform, S Transform, Spectrogram, CNN, Denoising</b></p>
+					<a href="https://xli2522.github.io/GW-SignalGen/">Notes: Time and Frequency Analysis Methods on GW Signals</a>
+					<p></p>
+					<a href="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/doc/Chirp-rate-enhanced-spectrogram-dev.pdf">Presentation</a><p></p>
+					
+					<center><a href="https://github.com/xli2522/s-transform"> Dev. Repo: S Transform </a><a href="https://badge.fury.io/gh/xli2522%2Fs-transform"><img src="https://badge.fury.io/gh/xli2522%2Fs-transform.svg" alt="GitHub version" height="auto"></a></center>
+					<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/GWsignal/CZT.png?raw=true" class="centerImage"  alt="Ontario Cases" height=auto width=auto></center>
+					
+					<a id="imvideo"></a>
+					<h3>Image to Video Made Easy - Imvideo Python Package </h3>
+					<h4>January 2021, Western University</h4>
+					<h4>Previous versions: 0.0.1 Jan, 7, 2021: Initial release | 0.0.2 Jan, 8, 2021: Fixed typo | <b>Upcoming:</b> 0.0.3: Update doc.; better memory management; condition for batches</h4>
+					<p><a href='https://badge.fury.io/py/imvideo'><img src="https://badge.fury.io/py/imvideo.svg" referrerpolicy="no-referrer" alt="PyPI version"> &nbsp;<a href="https://badge.fury.io/gh/xli2522%2Fimvideo_dev"><img src="https://badge.fury.io/gh/xli2522%2Fimvideo_dev.svg" alt="GitHub version" height="auto"></a></a></p>
+					<center><a href="https://xli2522.github.io/imvideo/"><b>Project Demo: https://xli2522.github.io/imvideo/</b></a></center>
+					<center><iframe width="560" height="315" src="https://www.youtube.com/embed/FlZCPqNgSQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+					
+					<!-- 2020 -->
+					<h2>2020</h2>
+
+					<a id="CubeSat"></a>
+					<h3>Canadian CubeSat Project</h3>
+					<h4>June - September 2020, Department of Electrical and Computer Engineering, Western University & Canadian Space Agency</h4>
+					<p><b>Not actual images of Ukpik-1 satellite. | Member of Ukpik-1 Orbit Team; worked on mission simulation</b></p>
+					<p>Objective: <i>Conduct a flight-test with a novel imaging system for engineering technology demonstration with the potential to provide virtual reality-ready images.</i></p>
+				
+					<div class="row">
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/Earth_Coverage.png?raw=true" alt="Coverage" onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/RaiseOrbit_Altitude.png.bmp?raw=true" alt="Raise Orbit Altitude" onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/Earth_Coverage_2d.png?raw=true" alt="Coverage 2D" onclick="myFunction(this);">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/communication.png?raw=true" alt="Communication" onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/SatView.bmp?raw=true" alt="SatView" onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/Radar_Antenna_Pattern.png.bmp?raw=true" alt="Antenna" onclick="myFunction(this);">
+						</div>
+					</div>
+					
+					<a id="CovNET"></a>
+					<h3>CovNET Project</h3>
+					<h4>May - August 2020, Department of Applied Mathematics, Muller Lab, Western University</h4>
+					<h4>Keywords: <b>Network Science, Parameter Estimation, Agent-based Transmission Model</b></h4>
+					<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/CovModel/ontario.png?raw=true" class="centerImage"  alt="Ontario Cases" height=auto width="628"></center>
+
+					<a id="SVEIIRS"></a>
+					<h3>Spatial SVEIIRS Model in Epidemiology</h3>
+					<h4>May - August 2020, Department of Physics and Astronomy, Western University</h4>
+					<h4>Keywords: <b>ODE, Compartmental Model, Stability Analysis, Numerical Computation</b></h4>
+					<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/CovModel/presentation.png?raw=true" class="centerImage"  alt="presentation" height=auto width="1200"></center>
+
+					<!-- 2019 -->
+					<h2>2019</h2>
+
+					<a id="WaveTank"></a>
+					<h3>Wave Tank Probe System</h3>
+					<h4>May - August 2019, Department of Physics and Astronomy, Western University   <b> -  (2019 Department of Physics and Astronomy Summer Research Fellowship Award - Honorable Mention) </b></h4>
+					<p></p>
+					<div class="row">
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/wave/wave_tank.jpg?raw=true" alt="Type1" onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/wave/00000PORTRAIT_00000_BURST20190613170752727.jpg?raw=true" alt="Amplifier Resisters" onclick="myFunction(this);">
+						</div>
+						<div class="column">
+							<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/wave/IMG_20190626_112845.jpg?raw=true" alt="Setting up lighting for high-speed camera" onclick="myFunction(this);">
+						</div>
+					</div>
+					<!-- The expanding image container -->
+					<div class="container">
+						<!-- Close the image -->
+						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					
+						<!-- Expanded image -->
+						<img id="expandedImg" style="width:100%">
+					
+						<!-- Image text -->
+						<div id="imgtext"></div>
+					</div>
+					<p></p>
+					<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/wave/type2_thine_cover.png?raw=true" class="centerImage"  alt="Type2" height=auto width="700"></center>
+					
+					<a id="OpenCV"></a>
+					<h3>OpenCV Case Study</h3>
+					<br>
+					<div class="row">
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/sM9u2Yn_unw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/o-cyCkDFroE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/K-GkvT8UbSI" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<!-- Other Projects -->
+					<a id="Others"></a>
+					<h2>Other Projects</h2>
+
+					<button type="button" class="collapsible"><b>Data Analysis/Numerical Computation</b></button>
+					<div class="content">
+						<div class="row">
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/astro2801p2front.png?raw=true" alt="astro2801p2" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/gravity.png?raw=true" alt="gravity" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/astro2801p3.png?raw=true" alt="astro2801p3" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/ICM/Game4.2245DONT.png?raw=true" alt="Game Detail" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/ICM/wins.png?raw=true" alt="Wining Stat" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/relaxation2.png?raw=true" alt="Method of relaxation" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/part1graph.jpg?raw=true" alt="part1graph" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/part4average_grid.jpg?raw=true" alt="part4average_grid" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/part2graph.jpg?raw=true" alt="part2graph" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/fence_ratio.png?raw=true" alt="fence_ratio" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/pendu.gif?raw=true" alt="pendu" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/projectileEuler-Cromer.png?raw=true" alt="projectile" onclick="myFunction(this);">
+							</div>
+							
+						</div>
+					</div>
+					<button type="button" class="collapsible" ><b>Neural Network/Computer Vision</b></button>
+					<div class="content">
+						<div class="row">
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/particleTracking/concave0_marked.png?raw=true" alt="frame0identify" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/CNN_human.png?raw=true" alt="CNN_human" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/others/OpenCV_box.png?raw=true" alt="OpenCV_box" onclick="myFunction(this);">
+							</div>
+						</div>
+					</div>
+
+					<button type="button" class="collapsible"><b>Molecular Dynamics</b></button>
+					<div class="content">
+							<div class="row">
+								<div class="column">
+									<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/MD/5mgp_VDM.bmp.bmp?raw=true" alt="5mgp_VDM" onclick="myFunction(this);">
+								</div>
+								<div class="column">
+									<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/MD/5mgq_bonds.bmp.bmp?raw=true" alt="5mgq_bonds" onclick="myFunction(this);">
+								</div>
+								<div class="column">
+									<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/MD/5mgq_line.bmp.bmp?raw=true" alt="5mgq_line" onclick="myFunction(this);">
+								</div>
+								<div class="column">
+									<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/MD/5mgq_NewCartoon.bmp.bmp?raw=true" alt="5mgq_NewCartoon" onclick="myFunction(this);">
+								</div>
+								<div class="column">
+									<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/MD/spc216_hbonds.bmp.bmp?raw=true" alt="spc216_hbonds" onclick="myFunction(this);">
+								</div>
+								<div class="column">
+									<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/MD/spc216_recreation.bmp.bmp?raw=true" alt="spc216_recreation" onclick="myFunction(this);">
+								</div>
+							</div>
+						<center><iframe width="560" height="315" src="https://www.youtube.com/embed/VRP9TdanajE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+					</div>
+					<button type="button" class="collapsible"><b>Challenges<small><mark> #Active 2021 LISA Data Challenge</mark></small> </b></button>
+					<div class="content">
+						<div class="row">
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/LISA/Sangria_FD.png?raw=true" alt="LISAchallenge" onclick="myFunction(this);">LISA Frequency Domain - <b>LISA Data Challenge 2021<mark> #Active </mark></small></b>
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/ICM/final2.png?raw=true" alt="2020 ICM UMAP Final" onclick="myFunction(this);">Manifold Approximation and Projection - Music Genre Similarities - <b>ICM 2021</b>
+							</div>
+							<div class="column">
+								<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/ICM/formation_5.png?raw=true" alt="2019 ICM Game Detail" onclick="myFunction(this);">Player Mean Position - Soccer Team Formation Strategy - <b>ICM 2020</b>
+							</div>
+						</div>
+					</div>
+					<!-- Certifications -->
+					<a id="Certif"></a>
+					<h2>Certifications</h2>
+
+					<h3>Analytical Graphics Inc.</h3>
+					<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/cubsat/stk.jpg?raw=true" class="centerImage"  alt="STK Cube" height=auto width="410"></center>
+					<center><h4>STK 12 Level 1 | STK 12 Level 2 Mater Certificate </h4></center>
+					<center><h4>STK 12 Level 3 Grand Mater Certificate in Coverage, Analysis, and Space Environment.</h4></center>
+					<h3>Western University</h3>
+					<center><h4> Nuclear Radiation Safety | Laboratory Safety and Hazardous Waste Management</h4></center>
+					<center><h4> Worker Health and Safety Awareness | Workplace Hazardous Materials Information System Training</h4></center>
+					<h3>Honors/Scholarships</h3>
+					<center><h4></h4></center>
+					<center><h4>Undergraduate Summer Research Internship Award - 2021 (UWO)</h4></center>
+					<center><h4>Physics and Astronomy Summer Research Fellowship Prize - Honorable Mention 2019 (UWO)</h4></center>
+					<center><h4>The Western Scholarship of Excellence - 2018 (UWO)</h4></center>
+					<!-- <center><h4>OAPT Grade 11 Physics Contest - School Champion; Provincial 8th 2017 (OAPT)</h4></center> -->
+
+					<br>
+					<div class="lavenderBox">
+						<div class="header">Xiyuan's Research Library</div>
+						<div class="subtitle linklist"><a href="#">Physics</a> <a href="#">Applied Mathematics</a> <a href="#">Scientific Computing</a> </div>
+						<div class="linklist">
+							<a href="#">Data Analysis </a> <a href="#">Numerical Simulation </a> <a href="#">Numerical Computing </a> <a href="#">Space-craft Mission Analysis </a> <a href="#">Machine Learning </a> <a href="#">Artificial Neural Networks  </a> <a href="#">Computer Vision  </a> <a href="#"> Project Management </a> <a href="#"> Python </a> <a href="#">NumPy  </a> <a href="#"> SciPy </a> <a href="#">STK 12   </a><a href="#">TensorFlow </a> <a href="#">Scikit-learn </a> <a href="#">OpenCV </a> <a href="#">Arduino </a> 
+						</div>
+						
+						<div class="subtitle">Special thanks to Professor Olga Trichtchenko and Professor Paul Weigert at Western University.</div>
+					</div>
+				</div>
+				<!--&emsp;&emsp;<img src="img/badges/tensorflow.png"  alt="TF" height="50" width="230"> -->
+				<center><img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/badges/stk.png?raw=true"  alt="STK" height="80" width="55"> &emsp;<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/badges/agi.png?raw=true"  alt="agi" height="50" width="230"> &emsp;&emsp;<img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/badges/tensorflow.png?raw=true"  alt="TF" height="50" width="230"> &emsp; &emsp; <img src="https://github.com/xli2522/xli2522.github.io/blob/gh-pages/img/badges/gtc.png?raw=true"  alt="coursera" height="65" width="70"></body></center>
+				<div class="pagefooter">
+					This page was last edited in 1905 - The year of miracles | Template by <a href="http://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a> <!-- Please leave this link unchanged -->
+					Content copied from <b>https://xli2522.github.io/</b>
+					<div class="footerlinks">
+						<a href="#">Privacy policy</a> <a href="#">About</a> <a href="#">Terms and conditions</a> <a href="#">Cookie statement</a> <a href="#">Developers</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+		
+		
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="script.js"></script>
+
+
+    </body>
+</html>
